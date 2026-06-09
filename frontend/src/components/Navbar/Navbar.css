@@ -88,6 +88,31 @@
   font-size: 14px;
 }
 
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.user-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #f5a623;
+  color: #1a1a2e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 14px;
+}
+
+.user-name {
+  color: #f5a623;
+  font-size: 14px;
+  font-weight: 600;
+}
+
 .hamburger { display: none; background: none; border: none; color: white; font-size: 24px; cursor: pointer; }
 
 @media (max-width: 768px) {

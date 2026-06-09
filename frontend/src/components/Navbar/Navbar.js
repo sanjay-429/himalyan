@@ -34,6 +34,10 @@ const Navbar = () => {
             {user.role === 'admin' && (
               <li><Link to="/admin" className="btn-nav-admin" onClick={() => setMenuOpen(false)}>Admin Panel</Link></li>
             )}
+            <li className="user-info">
+              <div className="user-avatar">{user.name ? user.name.charAt(0).toUpperCase() : '👤'}</div>
+              <span className="user-name">{user.name}</span>
+            </li>
             <li><button className="btn-logout" onClick={handleLogout}>Logout</button></li>
           </>
         ) : (
