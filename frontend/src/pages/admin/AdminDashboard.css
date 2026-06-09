@@ -1,0 +1,33 @@
+.admin-page { padding: 30px; }
+.admin-page-header { margin-bottom: 28px; }
+.admin-page-header h1 { font-size: 26px; font-weight: 800; color: #1a1a2e; }
+.admin-page-header p { color: #888; font-size: 14px; margin-top: 4px; }
+
+.stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; margin-bottom: 28px; }
+
+.stat-card {
+  background: white; border-radius: 12px; padding: 20px;
+  display: flex; align-items: center; gap: 16px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06); border-left: 4px solid;
+}
+.stat-icon { width: 48px; height: 48px; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 22px; }
+.stat-card h3 { font-size: 24px; font-weight: 800; }
+.stat-card p { color: #888; font-size: 13px; }
+
+.dashboard-grid { display: grid; grid-template-columns: 1.6fr 1fr; gap: 20px; }
+.chart-card, .recent-card { background: white; border-radius: 12px; padding: 24px; box-shadow: 0 2px 12px rgba(0,0,0,0.06); }
+.chart-card h2, .recent-card h2 { font-size: 17px; font-weight: 700; color: #1a1a2e; margin-bottom: 20px; }
+
+.recent-list { display: flex; flex-direction: column; gap: 10px; }
+.recent-item { display: flex; justify-content: space-between; align-items: center; padding: 10px 12px; background: #f8f9fa; border-radius: 8px; }
+.recent-user { font-weight: 600; color: #1a1a2e; font-size: 13px; }
+.recent-bike { color: #888; font-size: 12px; }
+.recent-right { display: flex; flex-direction: column; align-items: flex-end; gap: 4px; }
+.recent-amount { font-weight: 700; color: #27ae60; font-size: 13px; }
+.status-dot { font-size: 11px; padding: 2px 8px; border-radius: 10px; color: white; text-transform: capitalize; }
+.no-data { color: #888; text-align: center; padding: 20px; font-size: 14px; }
+
+@media (max-width: 1100px) {
+  .stats-grid { grid-template-columns: repeat(2, 1fr); }
+  .dashboard-grid { grid-template-columns: 1fr; }
+}

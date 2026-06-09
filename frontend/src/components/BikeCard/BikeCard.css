@@ -1,0 +1,87 @@
+.bike-card {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.bike-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.15);
+}
+
+.bike-img-wrap {
+  position: relative;
+  height: 200px;
+  background: linear-gradient(135deg, #f0f0f0, #e0e0e0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bike-img-wrap img { width: 100%; height: 100%; object-fit: cover; }
+
+.bike-img-placeholder { font-size: 80px; }
+
+.bike-badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.bike-badge.available { background: #27ae60; color: white; }
+.bike-badge.unavailable { background: #e74c3c; color: white; }
+
+.bike-info { padding: 20px; }
+
+.bike-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 6px; }
+.bike-header h3 { font-size: 18px; font-weight: 700; color: #1a1a2e; }
+
+.bike-type {
+  background: #f5a62320;
+  color: #f5a623;
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.bike-brand { color: #888; font-size: 13px; margin-bottom: 8px; }
+.bike-desc { color: #555; font-size: 14px; margin-bottom: 12px; line-height: 1.5; }
+
+.bike-features { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 16px; }
+.bike-features span {
+  background: #f8f9fa;
+  border: 1px solid #e0e0e0;
+  padding: 3px 10px;
+  border-radius: 10px;
+  font-size: 12px;
+  color: #555;
+}
+
+.bike-footer { display: flex; justify-content: space-between; align-items: center; }
+
+.bike-price { display: flex; align-items: baseline; gap: 3px; }
+.price { font-size: 24px; font-weight: 800; color: #1a1a2e; }
+.per { color: #888; font-size: 13px; }
+
+.btn-book {
+  background: linear-gradient(135deg, #f5a623, #e8940f);
+  color: white;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s;
+}
+
+.btn-book:hover:not(:disabled) { transform: scale(1.05); }
+.btn-book:disabled { background: #ccc; cursor: not-allowed; }

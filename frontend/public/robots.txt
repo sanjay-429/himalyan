@@ -1,0 +1,9 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /my-bookings
+Disallow: /login
+Disallow: /register
+
+Sitemap: https://himalayancruiser.in/sitemap.xml

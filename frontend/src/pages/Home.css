@@ -1,0 +1,124 @@
+.home { font-family: 'Segoe UI', sans-serif; }
+
+.hero {
+  min-height: 90vh;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="rgba(245,166,35,0.05)" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,112C672,96,768,96,864,112C960,128,1056,160,1152,160C1248,160,1344,128,1392,112L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>') no-repeat bottom;
+}
+
+.hero-overlay { width: 100%; padding: 80px 40px; }
+
+.hero-content { max-width: 700px; margin: 0 auto; text-align: center; color: white; }
+
+.hero-tag {
+  display: inline-block;
+  background: rgba(245,166,35,0.2);
+  color: #f5a623;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  margin-bottom: 20px;
+  border: 1px solid rgba(245,166,35,0.3);
+}
+
+.hero-content h1 { font-size: 52px; font-weight: 900; margin-bottom: 20px; line-height: 1.2; }
+.hero-content h1 span { color: #f5a623; }
+.hero-content p { font-size: 18px; color: #aaa; margin-bottom: 36px; }
+
+.hero-btns { display: flex; gap: 16px; justify-content: center; margin-bottom: 50px; }
+
+.btn-primary {
+  background: linear-gradient(135deg, #f5a623, #e8940f);
+  color: white;
+  padding: 14px 32px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+  transition: all 0.3s;
+  box-shadow: 0 4px 15px rgba(245,166,35,0.4);
+}
+
+.btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 25px rgba(245,166,35,0.5); }
+
+.btn-secondary {
+  border: 2px solid rgba(255,255,255,0.3);
+  color: white;
+  padding: 14px 32px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+  transition: all 0.3s;
+}
+
+.btn-secondary:hover { background: rgba(255,255,255,0.1); }
+
+.hero-stats { display: flex; justify-content: center; gap: 50px; }
+.hero-stats div { display: flex; flex-direction: column; align-items: center; }
+.hero-stats strong { font-size: 32px; color: #f5a623; font-weight: 900; }
+.hero-stats span { font-size: 13px; color: #888; }
+
+.section-header { text-align: center; margin-bottom: 50px; }
+.section-header h2 { font-size: 36px; font-weight: 800; color: #1a1a2e; margin-bottom: 10px; }
+.section-header p { color: #888; font-size: 16px; }
+
+.features-section { padding: 80px 40px; background: #f8f9fa; }
+
+.features-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; max-width: 1200px; margin: 0 auto; }
+
+.feature-card {
+  background: white;
+  padding: 32px 24px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+  transition: transform 0.3s;
+}
+.feature-card:hover { transform: translateY(-4px); }
+.feature-icon { font-size: 44px; display: block; margin-bottom: 16px; }
+.feature-card h3 { color: #1a1a2e; margin-bottom: 8px; font-size: 18px; }
+.feature-card p { color: #888; font-size: 14px; }
+
+.routes-section { padding: 80px 40px; }
+.routes-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 16px; max-width: 1200px; margin: 0 auto; }
+
+.route-card {
+  background: white;
+  border: 2px solid #f0f0f0;
+  border-radius: 12px;
+  padding: 24px 16px;
+  text-align: center;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.route-card:hover { border-color: #f5a623; transform: translateY(-4px); }
+.route-emoji { font-size: 36px; display: block; margin-bottom: 10px; }
+.route-card h4 { color: #1a1a2e; margin-bottom: 4px; font-size: 15px; }
+.route-card p { color: #888; font-size: 12px; }
+
+.cta-section {
+  background: linear-gradient(135deg, #1a1a2e, #0f3460);
+  color: white;
+  text-align: center;
+  padding: 80px 40px;
+}
+.cta-section h2 { font-size: 40px; font-weight: 800; margin-bottom: 16px; }
+.cta-section p { font-size: 18px; color: #aaa; margin-bottom: 32px; }
+
+@media (max-width: 768px) {
+  .hero-content h1 { font-size: 32px; }
+  .features-grid { grid-template-columns: 1fr 1fr; }
+  .routes-grid { grid-template-columns: repeat(3, 1fr); }
+  .hero-stats { gap: 30px; }
+}

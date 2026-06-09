@@ -1,0 +1,12 @@
+.filter-tabs { display: flex; gap: 8px; margin-bottom: 18px; flex-wrap: wrap; }
+.tab { padding: 7px 16px; border: 2px solid #e0e0e0; border-radius: 20px; background: white; cursor: pointer; font-size: 13px; font-weight: 600; transition: all 0.2s; display: flex; align-items: center; gap: 6px; }
+.tab.active { background: #f5a623; border-color: #f5a623; color: white; }
+.tab-count { background: rgba(0,0,0,0.15); padding: 1px 7px; border-radius: 10px; font-size: 11px; }
+
+.admin-table td strong { color: #1a1a2e; display: block; font-size: 13px; }
+.admin-table td p { color: #888; font-size: 12px; }
+.status-badge { padding: 4px 12px; border-radius: 12px; font-size: 12px; font-weight: 700; text-transform: capitalize; white-space: nowrap; }
+
+.btn-confirm { background: #27ae6020; color: #27ae60; border: none; padding: 5px 11px; border-radius: 6px; cursor: pointer; font-size: 12px; font-weight: 600; margin-right: 4px; }
+.btn-cancel-sm { background: #e74c3c20; color: #e74c3c; border: none; padding: 5px 11px; border-radius: 6px; cursor: pointer; font-size: 12px; font-weight: 600; }
+.btn-complete { background: #3498db20; color: #3498db; border: none; padding: 5px 11px; border-radius: 6px; cursor: pointer; font-size: 12px; font-weight: 600; }

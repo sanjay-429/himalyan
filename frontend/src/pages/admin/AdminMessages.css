@@ -1,0 +1,29 @@
+.messages-layout { display: grid; grid-template-columns: 340px 1fr; gap: 20px; min-height: 500px; }
+
+.messages-list { background: white; border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,0.06); overflow-y: auto; max-height: 600px; }
+.msg-item { padding: 14px 18px; border-bottom: 1px solid #f8f9fa; cursor: pointer; position: relative; transition: background 0.2s; }
+.msg-item:hover { background: #fafafa; }
+.msg-item.selected { background: #fff8e7; border-left: 3px solid #f5a623; }
+.msg-item.unread { background: #fffbf0; }
+
+.msg-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 3px; }
+.msg-top strong { color: #1a1a2e; font-size: 14px; }
+.msg-top span { color: #aaa; font-size: 11px; }
+.msg-email { color: #888; font-size: 12px; margin-bottom: 4px; }
+.msg-preview { color: #666; font-size: 13px; }
+.unread-dot { position: absolute; right: 14px; top: 50%; transform: translateY(-50%); width: 8px; height: 8px; background: #f5a623; border-radius: 50%; }
+
+.msg-detail { background: white; border-radius: 12px; padding: 28px; box-shadow: 0 2px 12px rgba(0,0,0,0.06); }
+.detail-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; padding-bottom: 14px; border-bottom: 2px solid #f8f9fa; }
+.detail-header h3 { font-size: 20px; font-weight: 800; color: #1a1a2e; }
+.detail-header span { color: #888; font-size: 13px; }
+.detail-meta { margin-bottom: 18px; }
+.detail-meta p { color: #888; font-size: 14px; margin-bottom: 3px; }
+.detail-body { background: #f8f9fa; border-radius: 10px; padding: 18px; color: #333; line-height: 1.7; font-size: 15px; margin-bottom: 20px; }
+.btn-reply { display: inline-block; background: linear-gradient(135deg, #f5a623, #e8940f); color: white; padding: 10px 22px; border-radius: 8px; text-decoration: none; font-weight: 700; font-size: 14px; }
+
+.no-selected { text-align: center; padding: 60px; color: #888; }
+.no-selected span { font-size: 44px; display: block; margin-bottom: 10px; }
+.no-data { text-align: center; padding: 40px; color: #888; font-size: 14px; }
+
+@media (max-width: 900px) { .messages-layout { grid-template-columns: 1fr; } }

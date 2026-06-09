@@ -1,0 +1,32 @@
+.bikes-hero {
+  background: linear-gradient(135deg, #1a1a2e, #16213e);
+  color: white;
+  text-align: center;
+  padding: 60px 40px;
+}
+.bikes-hero h1 { font-size: 42px; font-weight: 900; margin-bottom: 10px; }
+.bikes-hero p { color: #aaa; font-size: 16px; }
+
+.bikes-container { max-width: 1200px; margin: 0 auto; padding: 40px 20px; }
+
+.filter-bar { display: flex; gap: 12px; margin-bottom: 36px; flex-wrap: wrap; }
+.filter-btn {
+  padding: 8px 22px;
+  border: 2px solid #e0e0e0;
+  border-radius: 25px;
+  background: white;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+.filter-btn.active { background: #f5a623; border-color: #f5a623; color: white; }
+.filter-btn:hover:not(.active) { border-color: #f5a623; color: #f5a623; }
+
+.bikes-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+
+.no-bikes { text-align: center; padding: 60px; color: #888; font-size: 18px; }
+.loading { text-align: center; padding: 100px; font-size: 20px; }
+
+@media (max-width: 1024px) { .bikes-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 600px) { .bikes-grid { grid-template-columns: 1fr; } }
