@@ -6,11 +6,11 @@ const Footer = () => (
   <footer className="footer">
     <div className="footer-content">
       <div className="footer-brand">
-        <h3>🏍️ Himalayan Cruiser</h3>
+        <h3>🏍️ Himalayan Wheels</h3>
         <p>Dehradun's #1 Bike Rental Service</p>
         <p>📍 Rajpur Road, Dehradun, Uttarakhand - 248001</p>
         <p>📞 +91 98765 43210</p>
-        <p>✉️ info@himalayancruiser.com</p>
+        <p>✉️ info@himalyanwheels.com</p>
       </div>
       <div className="footer-links">
         <h4>Quick Links</h4>
@@ -28,7 +28,7 @@ const Footer = () => (
       </div>
     </div>
     <div className="footer-bottom">
-      <p>© 2024 Himalayan Cruiser. All rights reserved. | Dehradun, Uttarakhand</p>
+      <p>© 2024 Himalayan Wheels. All rights reserved. | Dehradun, Uttarakhand</p>
     </div>
   </footer>
 );

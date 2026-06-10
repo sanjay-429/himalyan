@@ -17,7 +17,7 @@ const Register = () => {
     try {
       const res = await API.post('/auth/register', form);
       login(res.data.user, res.data.token);
-      toast.success('Account created! Welcome to Himalayan Cruiser 🏍️');
+      toast.success('Account created! Welcome to Himalayan Wheels 🏍️');
       navigate('/bikes');
     } catch (err) {
       toast.error(err.response?.data?.message || 'Registration failed');
@@ -31,7 +31,7 @@ const Register = () => {
         <div className="auth-header">
           <span>🏍️</span>
           <h2>Create Account</h2>
-          <p>Join Himalayan Cruiser, Dehradun</p>
+          <p>Join Himalayan Wheels, Dehradun</p>
         </div>
         <form onSubmit={handleSubmit}>
           {[
