@@ -11,12 +11,36 @@ const features = [
 ];
 
 const routes = [
-  { name: 'Mussoorie', dist: '35 km', emoji: '🌄' },
-  { name: 'Rishikesh', dist: '45 km', emoji: '🕉️' },
-  { name: 'Auli', dist: '280 km', emoji: '⛷️' },
-  { name: 'Chakrata', dist: '88 km', emoji: '🌲' },
-  { name: 'Lansdowne', dist: '120 km', emoji: '🏕️' },
-  { name: 'Kedarnath', dist: '245 km', emoji: '⛰️' },
+  {
+    name: 'Mussoorie', dist: '35 km', emoji: '🌄',
+    img: 'https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=400&q=80',
+    mapUrl: 'https://www.google.com/maps/dir/Dehradun,+Uttarakhand/Mussoorie,+Uttarakhand',
+  },
+  {
+    name: 'Rishikesh', dist: '45 km', emoji: '🕉️',
+    img: 'https://images.unsplash.com/photo-1599661046289-e31897846e41?w=400&q=80',
+    mapUrl: 'https://www.google.com/maps/dir/Dehradun,+Uttarakhand/Rishikesh,+Uttarakhand',
+  },
+  {
+    name: 'Auli', dist: '280 km', emoji: '⛷️',
+    img: 'https://images.unsplash.com/photo-1580289519426-aa01d9e3b89f?w=400&q=80',
+    mapUrl: 'https://www.google.com/maps/dir/Dehradun,+Uttarakhand/Auli,+Uttarakhand',
+  },
+  {
+    name: 'Chakrata', dist: '88 km', emoji: '🌲',
+    img: 'https://images.unsplash.com/photo-1448375240586-882707db888b?w=400&q=80',
+    mapUrl: 'https://www.google.com/maps/dir/Dehradun,+Uttarakhand/Chakrata,+Uttarakhand',
+  },
+  {
+    name: 'Lansdowne', dist: '120 km', emoji: '🏕️',
+    img: 'https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=400&q=80',
+    mapUrl: 'https://www.google.com/maps/dir/Dehradun,+Uttarakhand/Lansdowne,+Uttarakhand',
+  },
+  {
+    name: 'Kedarnath', dist: '245 km', emoji: '⛰️',
+    img: 'https://images.unsplash.com/photo-1617195737496-bc30194e3a19?w=400&q=80',
+    mapUrl: 'https://www.google.com/maps/dir/Dehradun,+Uttarakhand/Kedarnath,+Uttarakhand',
+  },
 ];
 
 const Home = () => (
@@ -71,11 +95,15 @@ const Home = () => (
       </div>
       <div className="routes-grid">
         {routes.map((r, i) => (
-          <div key={i} className="route-card">
-            <span className="route-emoji">{r.emoji}</span>
+          <a key={i} className="route-card" href={r.mapUrl} target="_blank" rel="noopener noreferrer">
+            <div className="route-img-wrap">
+              <img src={r.img} alt={r.name} />
+              <span className="route-emoji">{r.emoji}</span>
+            </div>
             <h4>{r.name}</h4>
             <p>{r.dist} from Dehradun</p>
-          </div>
+            <span className="route-map-link">🗺️ View Route</span>
+          </a>
         ))}
       </div>
     </section>
