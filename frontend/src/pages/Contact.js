@@ -24,9 +24,9 @@ const Contact = () => {
   return (
     <div className="contact-page">
       <Helmet>
-        <title>Contact Himalayan Cruiser | Bike Rentals Dehradun</title>
-        <meta name="description" content="Contact Himalayan Cruiser at Rajpur Road, Dehradun. Call +91 98765 43210 or email us to plan your Himalayan bike adventure. Open 7 days a week." />
-        <link rel="canonical" href="https://himalayancruiser.in/contact" />
+        <title>Contact Himalayan Wheels | Bike Rentals Dehradun</title>
+        <meta name="description" content="Contact Himalayan Wheels at Rajpur Road, Dehradun. Call +91 98765 43210 or email us to plan your Himalayan bike adventure. Open 7 days a week." />
+        <link rel="canonical" href="https://himalyanwheels.com/contact" />
       </Helmet>
       <div className="contact-hero">
         <h1>Contact Us</h1>
@@ -37,7 +37,7 @@ const Contact = () => {
           <h2>Get in Touch</h2>
           <div className="info-item"><span>📍</span><div><strong>Location</strong><p>Rajpur Road, Dehradun, Uttarakhand - 248001</p></div></div>
           <div className="info-item"><span>📞</span><div><strong>Phone</strong><p>+91 98765 43210</p></div></div>
-          <div className="info-item"><span>✉️</span><div><strong>Email</strong><p>info@himalayancruiser.com</p></div></div>
+          <div className="info-item"><span>✉️</span><div><strong>Email</strong><p>info@himalyanwheels.com</p></div></div>
           <div className="info-item"><span>⏰</span><div><strong>Hours</strong><p>Mon-Sun: 7:00 AM - 9:00 PM</p></div></div>
           <div className="map-placeholder">
             <span>🗺️</span>

@@ -29,15 +29,7 @@ npm start         # Runs on http://localhost:3000
 
 ---
 
-## 🔐 Default Admin Credentials
-| Field    | Value                          |
-|----------|--------------------------------|
-| Email    | admin@himalayancruiser.com     |
-| Password | admin123                       |
-
-> Login with admin credentials → "Admin Panel" button appears in navbar → goes to `/admin`
-
----
+[//]: # (🔐 Admin login: check with project owner for credentials)
 
 ## 🌐 User Pages (localhost:3000)
 | Page        | URL           |

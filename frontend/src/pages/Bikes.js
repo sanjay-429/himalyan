@@ -30,9 +30,9 @@ const Bikes = () => {
   return (
     <div className="bikes-page">
       <Helmet>
-        <title>Rent Bikes in Dehradun | Adventure & Touring Bikes | Himalayan Cruiser</title>
+        <title>Rent Bikes in Dehradun | Adventure & Touring Bikes | Himalayan Wheels</title>
         <meta name="description" content="Browse our fleet of 30+ premium bikes for rent in Dehradun — Royal Enfield, adventure, cruiser & sport bikes. Best rates for Himalayan tours. Book online instantly!" />
-        <link rel="canonical" href="https://himalayancruiser.in/bikes" />
+        <link rel="canonical" href="https://himalyanwheels.com/bikes" />
       </Helmet>
       <div className="bikes-hero">
         <h1>Our Fleet</h1>

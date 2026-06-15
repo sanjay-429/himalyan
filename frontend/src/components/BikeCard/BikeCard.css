@@ -1,87 +1,113 @@
 .bike-card {
   background: white;
-  border-radius: 16px;
+  border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+  border: 1px solid #edf0f4;
+  transition: all 0.35s cubic-bezier(0.4,0,0.2,1);
 }
 
 .bike-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 12px 40px rgba(0,0,0,0.15);
+  transform: translateY(-8px);
+  box-shadow: 0 24px 60px rgba(0,0,0,0.13);
+  border-color: #e0e4ea;
 }
 
 .bike-img-wrap {
   position: relative;
-  height: 200px;
-  background: linear-gradient(135deg, #f0f0f0, #e0e0e0);
+  height: 210px;
+  background: linear-gradient(135deg, #f0f4f8, #e8ecf0);
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 
-.bike-img-wrap img { width: 100%; height: 100%; object-fit: cover; }
+.bike-img-wrap img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s cubic-bezier(0.4,0,0.2,1); }
+.bike-card:hover .bike-img-wrap img { transform: scale(1.06); }
 
-.bike-img-placeholder { font-size: 80px; }
+.bike-img-placeholder { font-size: 80px; opacity: 0.4; }
 
 .bike-badge {
   position: absolute;
-  top: 12px;
-  right: 12px;
-  padding: 4px 12px;
+  top: 14px;
+  right: 14px;
+  padding: 5px 14px;
   border-radius: 20px;
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  backdrop-filter: blur(8px);
 }
 
-.bike-badge.available { background: #27ae60; color: white; }
-.bike-badge.unavailable { background: #e74c3c; color: white; }
+.bike-badge.available { background: rgba(16,185,129,0.9); color: white; box-shadow: 0 2px 8px rgba(16,185,129,0.4); }
+.bike-badge.unavailable { background: rgba(239,68,68,0.9); color: white; }
 
-.bike-info { padding: 20px; }
+.bike-stock {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  background: rgba(0,0,0,0.6);
+  backdrop-filter: blur(8px);
+  color: white;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 5px 10px;
+  border-radius: 20px;
+  letter-spacing: 0.3px;
+}
 
-.bike-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 6px; }
-.bike-header h3 { font-size: 18px; font-weight: 700; color: #1a1a2e; }
+.bike-info { padding: 22px; }
+
+.bike-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 6px; gap: 8px; }
+.bike-header h3 { font-size: 18px; font-weight: 800; color: #1a1a2e; letter-spacing: -0.2px; margin: 0; }
 
 .bike-type {
-  background: #f5a62320;
-  color: #f5a623;
-  padding: 3px 10px;
-  border-radius: 12px;
-  font-size: 12px;
-  font-weight: 600;
+  background: rgba(245,166,35,0.12);
+  color: #d4870a;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 700;
   white-space: nowrap;
+  letter-spacing: 0.3px;
+  border: 1px solid rgba(245,166,35,0.2);
 }
 
-.bike-brand { color: #888; font-size: 13px; margin-bottom: 8px; }
-.bike-desc { color: #555; font-size: 14px; margin-bottom: 12px; line-height: 1.5; }
+.bike-brand { color: #8892a4; font-size: 13px; margin-bottom: 10px; font-weight: 500; }
+.bike-desc { color: #4b5563; font-size: 14px; margin-bottom: 14px; line-height: 1.6; }
 
-.bike-features { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 16px; }
+.bike-features { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 18px; }
 .bike-features span {
-  background: #f8f9fa;
-  border: 1px solid #e0e0e0;
-  padding: 3px 10px;
-  border-radius: 10px;
-  font-size: 12px;
-  color: #555;
+  background: #f4f6f9;
+  border: 1px solid #e8ecf0;
+  padding: 4px 10px;
+  border-radius: 8px;
+  font-size: 11.5px;
+  color: #4b5563;
+  font-weight: 500;
 }
 
-.bike-footer { display: flex; justify-content: space-between; align-items: center; }
+.bike-footer { display: flex; justify-content: space-between; align-items: center; padding-top: 16px; border-top: 1px solid #f0f2f5; }
 
 .bike-price { display: flex; align-items: baseline; gap: 3px; }
-.price { font-size: 24px; font-weight: 800; color: #1a1a2e; }
-.per { color: #888; font-size: 13px; }
+.price { font-size: 26px; font-weight: 900; color: #1a1a2e; letter-spacing: -0.5px; }
+.per { color: #8892a4; font-size: 13px; font-weight: 500; }
 
 .btn-book {
   background: linear-gradient(135deg, #f5a623, #e8940f);
   color: white;
   border: none;
-  padding: 10px 22px;
-  border-radius: 8px;
+  padding: 11px 24px;
+  border-radius: 10px;
   font-weight: 700;
   cursor: pointer;
   font-size: 14px;
-  transition: all 0.2s;
+  transition: all 0.25s cubic-bezier(0.4,0,0.2,1);
+  box-shadow: 0 4px 14px rgba(245,166,35,0.35);
+  letter-spacing: 0.2px;
 }
 
-.btn-book:hover:not(:disabled) { transform: scale(1.05); }
-.btn-book:disabled { background: #ccc; cursor: not-allowed; }
+.btn-book:hover:not(:disabled) { transform: scale(1.04); box-shadow: 0 6px 20px rgba(245,166,35,0.5); }
+.btn-book:disabled { background: #d1d5db; box-shadow: none; cursor: not-allowed; color: #9ca3af; }

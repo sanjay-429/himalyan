@@ -11,12 +11,12 @@ const team = [
 const About = () => (
   <div className="about-page">
     <Helmet>
-      <title>About Us | Himalayan Cruiser - Dehradun Bike Rentals Since 2018</title>
-      <meta name="description" content="Learn about Himalayan Cruiser — Dehradun's most trusted bike rental service since 2018. Meet our team and discover our story of passion for the Himalayas." />
-      <link rel="canonical" href="https://himalayancruiser.in/about" />
+      <title>About Us | Himalayan Wheels - Dehradun Bike Rentals Since 2018</title>
+      <meta name="description" content="Learn about Himalayan Wheels — Dehradun's most trusted bike rental service since 2018. Meet our team and discover our story of passion for the Himalayas." />
+      <link rel="canonical" href="https://himalyanwheels.com/about" />
     </Helmet>
     <div className="about-hero">
-      <h1>About Himalayan Cruiser</h1>
+      <h1>About Himalayan Wheels</h1>
       <p>Dehradun's Premier Bike Rental Service Since 2018</p>
     </div>
 
@@ -24,7 +24,7 @@ const About = () => (
       <div className="about-story">
         <div className="story-content">
           <h2>Our Story</h2>
-          <p>Himalayan Cruiser was born out of a passion for the mountains and a love for motorcycles. Based in the heart of Dehradun — the Gateway to the Himalayas — we have been helping riders explore some of the most breathtaking landscapes in the world since 2018.</p>
+          <p>Himalayan Wheels was born out of a passion for the mountains and a love for motorcycles. Based in the heart of Dehradun — the Gateway to the Himalayas — we have been helping riders explore some of the most breathtaking landscapes in the world since 2018.</p>
           <p>From the serene roads of Mussoorie to the challenging terrains of Auli, our bikes have conquered every trail in Uttarakhand. We believe every rider deserves a premium experience without compromise on safety or quality.</p>
           <div className="about-stats">
             <div><strong>6+</strong><span>Years of Service</span></div>

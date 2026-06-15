@@ -1,32 +1,51 @@
 .bikes-hero {
-  background: linear-gradient(135deg, #1a1a2e, #16213e);
+  background: linear-gradient(160deg, #0a0a1a 0%, #1a1a2e 50%, #0f3460 100%);
   color: white;
   text-align: center;
-  padding: 60px 40px;
+  padding: 80px 40px;
+  position: relative;
+  overflow: hidden;
 }
-.bikes-hero h1 { font-size: 42px; font-weight: 900; margin-bottom: 10px; }
-.bikes-hero p { color: #aaa; font-size: 16px; }
+.bikes-hero::before {
+  content: '';
+  position: absolute;
+  width: 400px; height: 400px;
+  background: radial-gradient(circle, rgba(245,166,35,0.08) 0%, transparent 70%);
+  top: 50%; left: 50%;
+  transform: translate(-50%,-50%);
+  border-radius: 50%;
+}
+.bikes-hero h1 { font-size: 46px; font-weight: 900; margin-bottom: 12px; letter-spacing: -1px; position: relative; }
+.bikes-hero p { color: #8892a4; font-size: 17px; position: relative; }
 
-.bikes-container { max-width: 1200px; margin: 0 auto; padding: 40px 20px; }
+.bikes-container { max-width: 1200px; margin: 0 auto; padding: 48px 24px; }
 
-.filter-bar { display: flex; gap: 12px; margin-bottom: 36px; flex-wrap: wrap; }
+.filter-bar { display: flex; gap: 10px; margin-bottom: 40px; flex-wrap: wrap; }
 .filter-btn {
-  padding: 8px 22px;
-  border: 2px solid #e0e0e0;
-  border-radius: 25px;
+  padding: 9px 24px;
+  border: 1.5px solid #e8ecf0;
+  border-radius: 30px;
   background: white;
   cursor: pointer;
   font-size: 14px;
   font-weight: 600;
   transition: all 0.2s;
+  color: #4b5563;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+  font-family: 'Inter', sans-serif;
 }
-.filter-btn.active { background: #f5a623; border-color: #f5a623; color: white; }
-.filter-btn:hover:not(.active) { border-color: #f5a623; color: #f5a623; }
+.filter-btn.active {
+  background: linear-gradient(135deg, #f5a623, #e8940f);
+  border-color: transparent;
+  color: white;
+  box-shadow: 0 4px 14px rgba(245,166,35,0.4);
+}
+.filter-btn:hover:not(.active) { border-color: #f5a623; color: #f5a623; background: rgba(245,166,35,0.05); }
 
 .bikes-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
 
-.no-bikes { text-align: center; padding: 60px; color: #888; font-size: 18px; }
-.loading { text-align: center; padding: 100px; font-size: 20px; }
+.no-bikes { text-align: center; padding: 80px; color: #8892a4; font-size: 18px; }
+.loading { text-align: center; padding: 120px; font-size: 22px; color: #8892a4; }
 
 @media (max-width: 1024px) { .bikes-grid { grid-template-columns: repeat(2, 1fr); } }
-@media (max-width: 600px) { .bikes-grid { grid-template-columns: 1fr; } }
+@media (max-width: 600px) { .bikes-grid { grid-template-columns: 1fr; } .bikes-hero h1 { font-size: 32px; } }

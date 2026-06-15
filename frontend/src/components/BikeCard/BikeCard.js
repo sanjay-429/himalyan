@@ -13,9 +13,12 @@ const BikeCard = ({ bike }) => {
         ) : (
           <div className="bike-img-placeholder">🏍️</div>
         )}
-        <span className={`bike-badge ${bike.isAvailable ? 'available' : 'unavailable'}`}>
-          {bike.isAvailable ? 'Available' : 'Booked'}
+        <span className={`bike-badge ${bike.isAvailable && bike.stock > 0 ? 'available' : 'unavailable'}`}>
+          {bike.isAvailable && bike.stock > 0 ? 'Available' : 'Booked'}
         </span>
+        {bike.stock > 0 && bike.isAvailable && (
+          <span className="bike-stock">{bike.stock} left</span>
+        )}
       </div>
       <div className="bike-info">
         <div className="bike-header">

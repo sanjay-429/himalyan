@@ -18,7 +18,7 @@ const Navbar = () => {
       <div className="nav-brand">
         <Link to="/">
           <span className="brand-icon">🏍️</span>
-          <span className="brand-name">Himalayan Cruiser</span>
+          <span className="brand-name">Himalayan Wheels</span>
           <span className="brand-sub">Dehradun</span>
         </Link>
       </div>

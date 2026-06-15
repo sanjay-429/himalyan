@@ -31,7 +31,7 @@ const Login = () => {
         <div className="auth-header">
           <span>🏍️</span>
           <h2>Welcome Back</h2>
-          <p>Login to Himalayan Cruiser</p>
+          <p>Login to Himalayan Wheels</p>
         </div>
         <form onSubmit={handleSubmit}>
           <div className="form-group">
