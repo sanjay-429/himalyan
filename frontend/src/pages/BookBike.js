@@ -10,7 +10,7 @@ const BookBike = () => {
   const { user } = useAuth();
   const navigate = useNavigate();
   const [bike, setBike] = useState(null);
-  const [form, setForm] = useState({ startDate: '', endDate: '', licenseNumber: '' });
+  const [form, setForm] = useState({ startDate: '', endDate: '', licenseNumber: '', quantity: 1 });
   const [totalDays, setTotalDays] = useState(0);
   const [loading, setLoading] = useState(false);
 
@@ -75,16 +75,27 @@ const BookBike = () => {
                 value={form.licenseNumber} onChange={e => setForm({ ...form, licenseNumber: e.target.value })} required />
             </div>
 
+            <div className="form-group">
+              <label>Number of Bikes</label>
+              <div className="quantity-selector">
+                <button type="button" className="qty-btn" onClick={() => setForm(f => ({ ...f, quantity: Math.max(1, f.quantity - 1) }))}>−</button>
+                <span className="qty-value">{form.quantity}</span>
+                <button type="button" className="qty-btn" onClick={() => setForm(f => ({ ...f, quantity: Math.min(bike.stock || 1, f.quantity + 1) }))}>+</button>
+              </div>
+              <p className="stock-info">🟢 {bike.stock || 1} bike{bike.stock > 1 ? 's' : ''} available</p>
+            </div>
+
             {totalDays > 0 && (
               <div className="booking-summary">
                 <div className="summary-row"><span>Duration</span><strong>{totalDays} days</strong></div>
+                <div className="summary-row"><span>Bikes</span><strong>{form.quantity} bike{form.quantity > 1 ? 's' : ''}</strong></div>
                 <div className="summary-row"><span>Rate</span><strong>₹{bike.pricePerDay}/day</strong></div>
-                <div className="summary-row total"><span>Total Amount</span><strong>₹{totalDays * bike.pricePerDay}</strong></div>
+                <div className="summary-row total"><span>Total Amount</span><strong>₹{totalDays * bike.pricePerDay * form.quantity}</strong></div>
               </div>
             )}
 
             <button type="submit" className="btn-confirm" disabled={loading}>
-              {loading ? 'Confirming...' : `Confirm Booking ${totalDays > 0 ? `• ₹${totalDays * bike.pricePerDay}` : ''}`}
+              {loading ? 'Confirming...' : `Confirm Booking ${totalDays > 0 ? `• ₹${totalDays * bike.pricePerDay * form.quantity}` : ''}`}
             </button>
           </form>
         </div>

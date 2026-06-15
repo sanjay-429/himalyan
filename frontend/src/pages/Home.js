@@ -11,12 +11,36 @@ const features = [
 ];
 
 const routes = [
-  { name: 'Mussoorie', dist: '35 km', emoji: '🌄', tag: 'Hill Station', img: 'https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=600&q=80', mapUrl: 'https://www.google.com/maps/dir/Dehradun,+Uttarakhand/Mussoorie,+Uttarakhand' },
-  { name: 'Rishikesh', dist: '45 km', emoji: '🕉️', tag: 'Adventure Capital', img: 'https://images.unsplash.com/photo-1599661046289-e31897846e41?w=600&q=80', mapUrl: 'https://www.google.com/maps/dir/Dehradun,+Uttarakhand/Rishikesh,+Uttarakhand' },
-  { name: 'Auli', dist: '280 km', emoji: '⛷️', tag: 'Ski Resort', img: 'https://images.unsplash.com/photo-1580289519426-aa01d9e3b89f?w=600&q=80', mapUrl: 'https://www.google.com/maps/dir/Dehradun,+Uttarakhand/Auli,+Uttarakhand' },
-  { name: 'Chakrata', dist: '88 km', emoji: '🌲', tag: 'Forest Trails', img: 'https://images.unsplash.com/photo-1448375240586-882707db888b?w=600&q=80', mapUrl: 'https://www.google.com/maps/dir/Dehradun,+Uttarakhand/Chakrata,+Uttarakhand' },
-  { name: 'Lansdowne', dist: '120 km', emoji: '🏕️', tag: 'Camping', img: 'https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=600&q=80', mapUrl: 'https://www.google.com/maps/dir/Dehradun,+Uttarakhand/Lansdowne,+Uttarakhand' },
-  { name: 'Kedarnath', dist: '245 km', emoji: '⛰️', tag: 'Pilgrimage', img: 'https://images.unsplash.com/photo-1617195737496-bc30194e3a19?w=600&q=80', mapUrl: 'https://www.google.com/maps/dir/Dehradun,+Uttarakhand/Kedarnath,+Uttarakhand' },
+  {
+    name: 'Mussoorie', dist: '35 km', emoji: '🌄', tag: 'Hill Station',
+    img: 'https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=600&q=80',
+    mapUrl: 'https://www.google.com/maps/dir/Dehradun,+Uttarakhand/Mussoorie,+Uttarakhand'
+  },
+  {
+    name: 'Rishikesh', dist: '45 km', emoji: '🕉️', tag: 'Adventure Capital',
+    img: 'https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=600&q=80',
+    mapUrl: 'https://www.google.com/maps/dir/Dehradun,+Uttarakhand/Rishikesh,+Uttarakhand'
+  },
+  {
+    name: 'Auli', dist: '280 km', emoji: '⛷️', tag: 'Ski Resort',
+    img: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80',
+    mapUrl: 'https://www.google.com/maps/dir/Dehradun,+Uttarakhand/Auli,+Uttarakhand'
+  },
+  {
+    name: 'Chakrata', dist: '88 km', emoji: '🌲', tag: 'Forest Trails',
+    img: 'https://images.unsplash.com/photo-1448375240586-882707db888b?w=600&q=80',
+    mapUrl: 'https://www.google.com/maps/dir/Dehradun,+Uttarakhand/Chakrata,+Uttarakhand'
+  },
+  {
+    name: 'Lansdowne', dist: '120 km', emoji: '🏕️', tag: 'Camping',
+    img: 'https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=600&q=80',
+    mapUrl: 'https://www.google.com/maps/dir/Dehradun,+Uttarakhand/Lansdowne,+Uttarakhand'
+  },
+  {
+    name: 'Kedarnath', dist: '245 km', emoji: '⛰️', tag: 'Pilgrimage',
+    img: 'https://images.unsplash.com/photo-1627894483216-2138af692e32?w=600&q=80',
+    mapUrl: 'https://www.google.com/maps/dir/Dehradun,+Uttarakhand/Kedarnath,+Uttarakhand'
+  },
 ];
 
 const steps = [

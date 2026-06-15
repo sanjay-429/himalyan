@@ -7,6 +7,7 @@ const bookingSchema = new mongoose.Schema({
   endDate: { type: Date, required: true },
   totalDays: { type: Number, required: true },
   totalAmount: { type: Number, required: true },
+  quantity: { type: Number, default: 1, min: 1 },
   pickupLocation: { type: String, default: 'Dehradun, Uttarakhand' },
   status: { type: String, enum: ['pending', 'confirmed', 'cancelled', 'completed'], default: 'pending' },
   paymentStatus: { type: String, enum: ['unpaid', 'paid'], default: 'unpaid' },

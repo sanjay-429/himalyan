@@ -44,6 +44,20 @@
 .bike-badge.available { background: rgba(16,185,129,0.9); color: white; box-shadow: 0 2px 8px rgba(16,185,129,0.4); }
 .bike-badge.unavailable { background: rgba(239,68,68,0.9); color: white; }
 
+.bike-stock {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  background: rgba(0,0,0,0.6);
+  backdrop-filter: blur(8px);
+  color: white;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 5px 10px;
+  border-radius: 20px;
+  letter-spacing: 0.3px;
+}
+
 .bike-info { padding: 22px; }
 
 .bike-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 6px; gap: 8px; }
